@@ -1,0 +1,28 @@
+{% extends "base.html.twig" %}
+
+{% block title %}Index{% endblock %}
+
+{% block body %}
+    <p>Welcome to the World's Best Notes App. Use the below form to sign in!</p>
+
+    <div class="row">
+        <div class="col-md-8">
+            <form>
+                <div class="row">
+                    <label for="txtEmail">Email</label>
+                    <input type="email" name="txtEmail" id="txtEmail" class="form-control" required />
+                </div>
+
+                <div class="row">
+                    <div class="col-md-6 mb-3">
+                        <label for="txtPassword">Password</label>
+                        <input type="password" name="txtPassword" id="txtPassword"  class="form-control" required />
+                    </div>
+                </div>
+
+                <button type="submit" class="btn btn-primary btn-lg btn-block">Submit</button>
+            </form>
+        </div>
+    </div>
+
+{% endblock %}

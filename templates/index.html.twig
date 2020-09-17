@@ -1,0 +1,30 @@
+{% extends "base.html.twig" %}
+
+{% block title %}Index{% endblock %}
+
+{% block headerTitle%} World's Best Notes App {% endblock %}
+
+{% block body %}
+    <div class="row">
+        <div class="py-5 text-center">
+            <img src="{{ asset('build/images/hero-image.jpg')}}" class="d-block mx-auto mb-4" alt="An awesome team using Best Notes App" />
+            <p>Welcome to the World's Best Notes App</p>
+            <p>Notes app is more than just a crappy web based text editor. We allow you to track anything!</p>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="py-5 text-center">
+            <img src="{{ asset('build/images/security.jpg')}}" class="d-block mx-auto mb-4" alt="An awesome team using Best Notes App" />
+            <h2 class="display-5">Trusted by teams of 0 to 1</h2>
+            <p class="lead">Our awesome customers are people you have never heard of! We're awesome though!</p>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="container py-5 text-center">
+            <a class="btn btn-primary btn-lg btn-block" href="login/signup">Let's get Started!</a>
+        </div>
+    </div>
+
+{% endblock %}
